@@ -23,16 +23,6 @@ public class SecurityConfig {
     // authentication
     @Bean
     public UserDetailsService userDetailsService(){
-//        UserDetails admin = User.withUsername("user_03")
-//                .password(encoder.encode("password_3"))
-//                .roles("USER")
-//                .build();
-//
-//        UserDetails user = User.withUsername("user_04")
-//                .password(encoder.encode("password_4"))
-//                .roles("ADMIN", "USER", "HR", "LEAD")
-//                .build();
-//
         return new UserInfoUserDetailsService();
 
         /**
