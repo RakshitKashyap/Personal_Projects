@@ -56,6 +56,18 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!--		Custom java dependency-->
+
+		<dependency>
+			<groupId>org.example</groupId>
+			<artifactId>HyperTest-Assignment</artifactId>
+			<version>1.0</version>
+			<scope>compile</scope>
+
+		</dependency>
+
+
 	</dependencies>
 
 	<build>

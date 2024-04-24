@@ -25,11 +25,15 @@ import java.util.stream.Collectors;
 @Slf4j
 public class IssueServiceImpl implements IssueService {
 
-    @Autowired
-    private IssueRepository issueRepository;
+    private final IssueRepository issueRepository;
+
+    private final UserService userService;
 
     @Autowired
-    private UserService userService;
+    public IssueServiceImpl(IssueRepository issueRepository, UserService userService) {
+        this.issueRepository = issueRepository;
+        this.userService = userService;
+    }
 
     @Override
     public IssueResponseDto addNewIssue(IssueCreateRequest request) {
