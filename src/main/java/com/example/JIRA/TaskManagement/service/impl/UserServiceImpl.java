@@ -82,7 +82,6 @@ public class UserServiceImpl implements UserService {
 
             responseDtoList.add(convertToMiniUserResponse(user.getUsername()));
         }
-
         return Optional.of(responseDtoList);
     }
 
